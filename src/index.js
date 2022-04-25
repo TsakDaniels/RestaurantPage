@@ -1,4 +1,4 @@
-{
+
   /* <button class="tablinks" onclick="openCity(event, 'London')">London</button>
     <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
     <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
@@ -17,7 +17,8 @@
     <h3>Tokyo</h3>
     <p>Tokyo is the capital of Japan.</p>
   </div> */
-}
+
+
 
 export function createButtonsInsideTabs() {
   const tabDiv = document.querySelector("#tab-contents");
@@ -25,8 +26,8 @@ export function createButtonsInsideTabs() {
   let btn1 = document.createElement("button");
   let btn2 = document.createElement("button");
 
-  btn1.innerHTML = "London";
-  btn2.innerHTML = "Tokyo";
+  btn1.innerHTML = "Menu";
+  btn2.innerHTML = "Contact";
 
   btn1.addEventListener("click", function (event) {
     openCity(event, "London");
@@ -40,6 +41,18 @@ export function createButtonsInsideTabs() {
 
   tabDiv.appendChild(btn1);
   tabDiv.appendChild(btn2);
+
+  
+let header = document.createElement("h1")
+header.style.cssText = "text-align:center; color:white; font-size:45px"
+header.append("Restaurant")
+document.body.appendChild(header)
+
+
+const para = document.createElement("p");
+para.style.cssText = "text-align:center; color:white; font-size:20px"
+para.innerText = "Not the greatest restaurant page, i know. :( :(";
+document.body.appendChild(para);
 }
 
 

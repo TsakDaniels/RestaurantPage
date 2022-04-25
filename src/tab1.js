@@ -4,7 +4,7 @@ export function createLondonTab() {
   
   let div1 = document.createElement("div");
   div1.style.cssText =
-    "position:absolute;margin-left:50%;width:400px;height:200px;background:#FFB6C1;border:3px solid black;";
+    "position:absolute;margin-top:50px;background-color:orange;width:400px;height:200px;border:3px solid black;";
 
   div1.classList.add("tabcontent");
   div1.id = "London";
